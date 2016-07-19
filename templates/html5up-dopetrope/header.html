@@ -1,0 +1,21 @@
+<div id="header-wrapper">
+	<div id="header">
+		<h1><a href="index.html">{{ data.header.title|safe }}</a></h1>
+
+		<div id='_swf_menu'></div>
+		<div id='_swf_banner'></div>
+		<script type="text/javascript">
+			load_template_section('menu', '_swf_menu', function(){
+				waitUntilExists('_swf_menu', function(){
+					load_scripts([
+						'assets/js/jquery.dropotron.min.js', 
+						'assets/js/skel.min.js', 
+						'assets/js/skel-viewport.min.js', 
+						'assets/js/util.js',
+						'assets/js/main.js'
+					], false, false, '{{ template }}');
+				}, 'itself');
+			});
+		</script>
+	</div>
+</div>

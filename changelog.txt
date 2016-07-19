@@ -1,0 +1,16 @@
+v0.0.3 - 2016/07/19
+- Renamed methods: load_css, load_json, load_scripts, load_module
+- Added callback param optional to load_template_section
+- Added path param optional to load_css, load_json, load_scripts. Now this methods can be used inside modules and template sections
+
+v0.0.2 - 2016/07/14
+- Implemented active menu item class name
+- Implemented a function to load module into custom container
+- Changed data access method from swig templating from {{ window.__data }} to {{ data }}, no more window object is passed
+- Until we reach version 1.0 no minified js will be available
+- LoadModule now can specify the target container, by default _swf_content
+- Implemented new convention for module containers to avoid templates style conflicts, _swf_ + module name, ex: _swf_content, _swf_header, _swf_menu, _swf_footer
+- Automated menu item class change implemented, specify a class name in data.json for active menu item, on module load the class will be automatically changed
+
+v0.0.1 - 2016/07/13
+First beta release version

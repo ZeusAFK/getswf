@@ -1,0 +1,8 @@
+<nav id="nav">
+	<ul>
+		{% for menu in window.__data.menu.items %}
+			<li id='_swf_menu_{{ menu.target }}' class='_swf_menu_item'><a href='{% if menu.type == 'module' %}{{ window.webroot }}{{ menu.target }}{% else %}{{ menu.target }}{% endif %}'>{{ menu.name }}</a></li>
+		{% endfor %}
+	</ul>
+</nav>
+<script src="{{ template }}assets/js/main.js"></script>

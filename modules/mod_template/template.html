@@ -1,0 +1,24 @@
+<section class="wrapper style1">
+	<div class="container">
+		<div id="content">
+			<h2>Templates download list</h2>
+			<ul>
+				<li><a href='http://getswf.zeusafk.net/files/templates/html5up-arcana.rar' data-bypass>HTML5UP - Arcana</a></li>
+				<li><a href='http://getswf.zeusafk.net/files/templates/html5up-dopetrope.rar' data-bypass>HTML5UP - Dopetrope</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+<script type="text/javascript">
+	$(document).ready(function(){
+		if($('#nav_header_{{ module }}').length){
+			$('.nav_header_item').removeClass('current');
+			$('#nav_header_{{ module }}').addClass('current');
+		}else{
+			waitUntilExists('nav_header_{{ module }}', function(){
+				$('.nav_header_item').removeClass('current');
+				$('#nav_header_{{ module }}').addClass('current');
+			}, 'itself');
+		}
+	});
+</script>

@@ -1,0 +1,43 @@
+{
+	"configuration" : {
+		"comment": "Site main configuration",
+		"language": "en_US",
+		"template": "html5up-dopetrope",
+		"title": "SWF",
+		"host": "localhost",
+		"path": "/getswf",
+		"version": 1,
+		"revision": 1
+	},
+	"header": {
+		"comment": "Header information, logo, site title head",
+		"title": "SWF Simple Web Framework"
+	},
+	"menu": {
+		"comment": "Main menu items",
+		"active": "current",
+		"items": [
+			{ "name" : "Home", "type" : "module", "target": "home" },
+			{ "name" : "Documentation", "type" : "module", "target": "documentation" },
+			{ 
+				"name" : "Demos", "type" : "module", "target": "demo",
+				"items": [
+					{ "name": "menu 1", "target": "menu1" },
+					{ "name": "menu 2", "target": "menu2" },
+					{ "name": "menu 3", "target": "menu3" }
+				]
+			 },
+			{ "name" : "Download", "type" : "module", "target": "download" },
+			{ "name" : "Templates", "type" : "module", "target": "template" },
+			{ "name" : "Contact", "type" : "module", "target": "contact" }
+		]
+	},
+	"module_alias": {
+		"comment": "Module alias override list",
+		"list": {
+			"contactos" : "contact",
+			"quienes-somos": "about",
+			"inicio": "home"
+		}
+	}
+}

@@ -1,0 +1,23 @@
+<div id="page-wrapper">
+	
+	<div id='_swf_header'></div>
+	
+	<div id="main-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="12u">
+					<div id='_swf_content'></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id='_swf_footer'></div>
+</div>
+<link rel="stylesheet" href="{{ template }}assets/css/main.css" />
+<script type="text/javascript">
+	$(document).ready(function(){
+		load_template_section('header', '_swf_header');
+		load_template_section('footer', '_swf_footer');
+	});
+</script>

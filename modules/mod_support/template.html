@@ -1,0 +1,21 @@
+<section class="wrapper style1">
+	<div class="container">
+		<div id="content">
+			<h2>This is not a release version yet</h2>
+			<p>But feel free if you want send me a email: zeusafk@gmail.com</p>
+		</div>
+	</div>
+</section>
+<script type="text/javascript">
+	$(document).ready(function(){
+		if($('#nav_header_{{ module }}').length){
+			$('.nav_header_item').removeClass('current');
+			$('#nav_header_{{ module }}').addClass('current');
+		}else{
+			waitUntilExists('nav_header_{{ module }}', function(){
+				$('.nav_header_item').removeClass('current');
+				$('#nav_header_{{ module }}').addClass('current');
+			}, 'itself');
+		}
+	});
+</script>

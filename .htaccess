@@ -1,0 +1,21 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9_-]+)$ ./index.html [NC,L,QSA]
+
+<IfModule mod_expires.c>
+<filesmatch "\.(jpg|JPG|gif|GIF|png|PNG|css|js|map|woff|json)$">
+ExpiresActive on
+ExpiresDefault "access plus 30 day"
+</filesmatch>
+</IfModule>
+
+#AddOutputFilterByType DEFLATE text/html
+#AddOutputFilterByType DEFLATE text/xml
+#AddOutputFilterByType DEFLATE text/css
+#AddOutputFilterByType DEFLATE application/xml
+#AddOutputFilterByType DEFLATE application/xhtml+xml
+#AddOutputFilterByType DEFLATE application/rss+xml
+#AddOutputFilterByType DEFLATE application/javascript
+#AddOutputFilterByType DEFLATE application/x-javascript
+#AddOutputFilterByType DEFLATE application/json

@@ -1,0 +1,16 @@
+<nav id="nav">
+	<ul>
+		{% for menu in data.menu.items %}
+			<li id='_swf_menu_{{ menu.target }}' class="_swf_menu_item">
+				<a href="{{ menu.target }}">{{ menu.name }}</a>
+				{% if menu.items.length > 0 %}
+				<ul>
+					{% for submenu in menu.items %}
+						<li><a href="{{ submenu.target }}">{{ submenu.name }}</a></li>
+					{% endfor %}
+				</ul>
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+</nav>
