@@ -2,7 +2,7 @@
 	"configuration" : {
 		"comment": "Site main configuration",
 		"language": "en_US",
-		"template": "html5up-dopetrope",
+		"template": "html5up-prologue",
 		"title": "SWF",
 		"host": "localhost",
 		"path": "/getswf",
@@ -11,7 +11,7 @@
 	},
 	"header": {
 		"comment": "Header information, logo, site title head",
-		"title": "SWF Simple Web Framework"
+		"title": "SWF: <em>Simple Web Framework</em>"
 	},
 	"menu": {
 		"comment": "Main menu items",

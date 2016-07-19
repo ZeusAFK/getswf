@@ -1,0 +1,25 @@
+<div id='_swf_header'></div>
+<div id='_swf_banner'></div>
+<div id='main'>
+	<br/>
+	<div id='_swf_content'></div>
+</div>
+<div id='_swf_footer'></div>
+<div id='_swf_loaded'></div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		load_template_section('header', '_swf_header');
+		load_template_section('footer', '_swf_footer');
+
+		waitUntilExists('_swf_loaded', function(){
+			load_scripts([
+				'assets/js/jquery.scrolly.min.js',
+				'assets/js/jquery.scrollzer.min.js',
+				'assets/js/skel.min.js',
+				'assets/js/util.js',
+				'assets/js/main.js',
+			], false, false, '{{ template }}');
+		}, 'itself');
+	});
+</script>
+<link rel="stylesheet" href="{{ template }}assets/css/main.css" />

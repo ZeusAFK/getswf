@@ -1,0 +1,23 @@
+<div id="header">
+	<div class="top">
+		<div id="logo">
+			<h1 id="title">{{ data.header.title|safe }}</h1>
+			<p>with {{ data.configuration.template }}</p>
+		</div>
+		<div id='_swf_menu'></div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				load_template_section('menu', '_swf_menu');
+			});
+		</script>
+	</div>
+	<div class="bottom">
+		<ul class="icons">
+			<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+			<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+			<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+			<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+		</ul>
+	</div>
+</div>

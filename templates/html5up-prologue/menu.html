@@ -1,0 +1,7 @@
+<nav id="nav">
+	<ul>
+		{% for menu in data.menu.items %}
+			<li><a href="{{ menu.target }}" id="top-link" class="skel-layers-ignoreHref"><span>{{ menu.name }}</span></a></li>
+		{% endfor %}
+	</ul>
+</nav>
